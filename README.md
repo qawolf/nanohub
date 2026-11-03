@@ -1,5 +1,11 @@
 # NanoHUB
 
+> **QA Wolf fork.** Branch `qawolf` is an upstream release tag plus our commits. Our releases are tagged
+> `vX.Y.Z-qawolf.N`. CI runs the tests only; no images or release archives are published from this fork.
+> Changes on top of upstream:
+>
+> - None yet.
+
 [![CI/CD](https://github.com/micromdm/nanohub/actions/workflows/on-push-pr.yml/badge.svg)](https://github.com/micromdm/nanohub/actions/workflows/on-push-pr.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/micromdm/nanohub.svg)](https://pkg.go.dev/github.com/micromdm/nanohub)
 
 NanoHUB adapts and unifies NanoMDM, NanoCMD, and KMFDDM into a single MDM server. Intended as a library it includes a reference command-line server as well.
