@@ -222,6 +222,7 @@ func main() {
 		nanoMux := nanolibhttp.NewMWMux(http.NewServeMux())
 		nanoMux.Use(authMW)
 		nanoapi.HandleAPIv1("", nanoMux, logger, store, pushService)
+		nanoMux.Handle(apiEndpointQueue, http.StripPrefix(apiEndpointQueue, queueClearHandler(store, logger.With("handler", "queue"))))
 		mux.Handle("/api/v1/nanomdm/",
 			http.StripPrefix("/api/v1/nanomdm", nanoMux),
 		)

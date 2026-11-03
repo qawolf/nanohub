@@ -5,7 +5,8 @@
 > images or release archives are published from this fork.
 > Changes on top of upstream:
 >
-> - None yet.
+> - `DELETE /api/v1/nanomdm/queue/{ids}` clears the command queue of each device ID (`cmd/nanohub/queue.go`).
+>   It follows the queue API proposed in https://github.com/micromdm/nanomdm/pull/269. Drop it when upstream ships one.
 
 [![CI/CD](https://github.com/micromdm/nanohub/actions/workflows/on-push-pr.yml/badge.svg)](https://github.com/micromdm/nanohub/actions/workflows/on-push-pr.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/micromdm/nanohub.svg)](https://pkg.go.dev/github.com/micromdm/nanohub)
 
