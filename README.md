@@ -1,7 +1,8 @@
 # NanoHUB
 
 > **QA Wolf fork.** Branch `qawolf` is an upstream release tag plus our commits. Our releases are tagged
-> `vX.Y.Z-qawolf.N`. CI runs the tests only; no images or release archives are published from this fork.
+> `vX.Y.Z-qawolf.N`. CI runs gofmt, vet, build and tests on Linux with the Go version of our image build; no
+> images or release archives are published from this fork.
 > Changes on top of upstream:
 >
 > - None yet.
